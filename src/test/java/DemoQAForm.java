@@ -22,6 +22,7 @@ public class DemoQAForm {
         File jpg = new File("src/test/resources/neon_lights.jpg");
         open("/automation-practice-form");
         executeJavaScript("const footer = document.querySelector('footer'); footer.setAttribute('hidden', '');");
+        executeJavaScript("$('#fixedban').remove()");
         $("#firstName").setValue("Vasiliy");
         $("#lastName").setValue("Starnov");
         $("#userEmail").setValue("vasiliy.starnov@mail.com");
@@ -44,9 +45,6 @@ public class DemoQAForm {
         $(new ByText("Noida")).click();
         $("div#city").click();
         $("button#submit").pressEnter();
-    }
-    @Test
-    void validateFormFill() {
         $("table.table").shouldHave(text("Vasiliy Starnov"));
         $("table.table").shouldHave(text("vasiliy.starnov@mail.com"));
         $("table.table").shouldHave(text("Male"));
@@ -58,6 +56,5 @@ public class DemoQAForm {
         $("table.table").shouldHave(text("sdfsdfsdf"));
         $("table.table").shouldHave(text("NCR Noida"));
         $("#closeLargeModal").click();
-
     }
 }
