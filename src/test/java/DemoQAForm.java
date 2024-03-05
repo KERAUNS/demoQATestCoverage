@@ -23,9 +23,9 @@ public class DemoQAForm {
         open("/automation-practice-form");
         executeJavaScript("const footer = document.querySelector('footer'); footer.setAttribute('hidden', '');");
         executeJavaScript("$('#fixedban').remove()");
-        $("#firstName").setValue("Vasiliy");
-        $("#lastName").setValue("Starnov");
-        $("#userEmail").setValue("vasiliy.starnov@mail.com");
+        $("#firstName").setValue("fISH");
+        $("#lastName").setValue("doh");
+        $("#userEmail").setValue("goddam@mail.com");
         $("label[for=gender-radio-1]").click();
         $("input#userNumber").clear();
         $("input#userNumber").setValue("88005553535");
