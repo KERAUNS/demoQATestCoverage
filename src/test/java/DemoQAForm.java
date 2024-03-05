@@ -45,8 +45,8 @@ public class DemoQAForm {
         $(new ByText("Noida")).click();
         $("div#city").click();
         $("button#submit").pressEnter();
-        $("table.table").shouldHave(text("Vasiliy Starnov"));
-        $("table.table").shouldHave(text("vasiliy.starnov@mail.com"));
+        $("table.table").shouldHave(text("fISH doh"));
+        $("table.table").shouldHave(text("goddam@mail.com"));
         $("table.table").shouldHave(text("Male"));
         $("table.table").shouldHave(text("8800555353"));
         $("table.table").shouldHave(text("23 November,1994"));
